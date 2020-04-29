@@ -119,12 +119,12 @@ class Words extends React.Component {
                                     </Typography>
                                     <Grid container>
                                         <Grid item xs={6}>
-                                            <Typography varient="h5" component="h2">
+                                            <Typography variant="h5" component="h2">
                                                 {word.word}
                                             </Typography>
                                         </Grid>
                                         <Grid item xs={6}>
-                                            <Button varient="contained" color="primary" onClick={this.handleDelete(id)}>삭제</Button>
+                                            <Button variant="contained" color="primary" onClick={() => this.handleDelete(id)}>삭제</Button>
                                         </Grid>
                                     </Grid>
                                 </CardContent>
@@ -141,10 +141,10 @@ class Words extends React.Component {
                         <TextField label="단어" type="text" name="word" value={this.state.word} onChange={this.handleValueChange}/><br/>
                         <TextField label="가중치" type="text" name="weight" value={this.state.weight} onChange={this.handleValueChange}/><br/>
                     </DialogContent>
-                    <DialogActions>
+                    <DialogAction>
                         <Button varient="contained" color="primary" onClick={this.handleSubmit}>추가</Button>
                         <Button varient="outlined" color="primary" onClick={this.handleDialogToggle}>닫기</Button>
-                    </DialogActions>
+                    </DialogAction>
                 </Dialog>
             </div>
         );
