@@ -6,6 +6,9 @@ import Texts from './Texts';
 import Words from './Words';
 import Detail from './Detail';
 
+import App from './App'
+
+
 class App extends React.Component {
     render() {
         return (

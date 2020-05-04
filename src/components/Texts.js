@@ -69,7 +69,7 @@ class Texts extends React.Component {
     }
 
     _delete(id) {
-        return fetch(`${databaseURL}/texts/${id}.json`, {
+        return fetch(`${databaseURL}/text/${id}.json`, {
             method: 'DELETE'
         }).then(res => {
             if(res.status != 200) {
